@@ -36,7 +36,7 @@ body {width: 1280px; margin: 0 auto;}
     margin-bottom: 5px;
 }
 .company_info .figures_container .figures {
-    height: 160px; padding: 0 50px;
+    height: 160px; width: 960px;
     background-color: #bdbdbd; border-radius: 10px;
     display: flex; align-items: center;
     justify-content: center;
@@ -49,10 +49,15 @@ body {width: 1280px; margin: 0 auto;}
     font-size: 40px; font-weight: 700;
     font-style: normal;
 }
-.company_info .figures_container .figures .asset {}
+.company_info .figures_container .figures .asset {
+    width: 275px;
+}
 .company_info .figures_container .figures .delivery {
     padding: 0 50px; margin: 0 50px;
     border-left: 1px solid #000;
     border-right: 1px solid #000;
+    width: 171px;
 }
-.company_info .figures_container .figures .client {}
+.company_info .figures_container .figures .client {
+    width: 174px;
+}
