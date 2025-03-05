@@ -1,0 +1,58 @@
+body {width: 1280px; margin: 0 auto;}
+.company_info {
+    position: relative;
+    display: flex; gap: 30px;
+    justify-content: center;
+}
+.company_info > p {
+    width: 621px; height: 750px;
+    background-color: #d9d9d9;
+    border-radius: 200px 0 0 0;
+}
+.company_info > p img {}
+.company_info .info {
+    width: 625px;
+    margin-top: 140px;
+}
+.company_info .info h2 {
+    font-size: 50px; font-weight: 600;
+}
+.company_info .info p {
+    font-size: 20px; line-height: 150%;
+    margin: 40px 0 180px;
+}
+.company_info .info a {
+    background-color: #000; color: #fff; 
+    font-size: 16px;
+    font-weight: 600; width: 214px; line-height: 59px;
+    display: inline-block; text-align: center;
+}
+.company_info .figures_container {
+    position: absolute; 
+    right: 0; bottom: -80px;
+}
+.company_info .figures_container > p {
+    font-size: 16px; text-align: right;
+    margin-bottom: 5px;
+}
+.company_info .figures_container .figures {
+    height: 160px; padding: 0 50px;
+    background-color: #bdbdbd; border-radius: 10px;
+    display: flex; align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+.company_info .figures_container .figures p {
+    font-size: 24px; font-weight: 500;
+}
+.company_info .figures_container .figures p em {
+    font-size: 40px; font-weight: 700;
+    font-style: normal;
+}
+.company_info .figures_container .figures .asset {}
+.company_info .figures_container .figures .delivery {
+    padding: 0 50px; margin: 0 50px;
+    border-left: 1px solid #000;
+    border-right: 1px solid #000;
+}
+.company_info .figures_container .figures .client {}
