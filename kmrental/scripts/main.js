@@ -10,25 +10,25 @@ const max2 = 797;
 const max3 = 15925;
 const max4 = 13089;
 
-counter($count1, max1);
-counter($count2, max2);
-counter($count3, max3);
-counter($count4, max4);
-
-function counter($counter, max) {
+function counter(count, max) {
     let now = max;
-
-    const handle = setInterval(() => {
-        $counter.innerHTML = Math.ceil(max - now);
     
+    const handle = setInterval(() => {
+        count.innerHTML = Math.ceil(max - now);
+        
         // 목표에 도달하면 정지
         if (now < 1) {
             clearInterval(handle);
         }
-    
+        
         // 적용될 수치, 점점 줄어듬
         const step = now / 10;
-
+        
         now -= step;
     }, 50);
 }
+
+counter($count1, max1);
+counter($count2, max2);
+counter($count3, max3);
+counter($count4, max4);
