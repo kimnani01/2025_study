@@ -1,0 +1,54 @@
+/* visual */
+.morenvy-banner-area {}
+.morenvy-banner-area .morenvy-banner {
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: space-between;
+}
+.morenvy-banner-area .morenvy-banner a {}
+
+/* 쇼룸 */
+.section .showroom {text-align: center;}
+.section .showroom h2 {
+    font-weight: 500; font-size: 30px;
+}
+.section .showroom h2::after {
+    content: ''; 
+    background-color: #EAE1D8; width: 518px; height: 1px;
+    display: block; margin: 30px auto;
+}
+.section .showroom p {font-weight: 500; font-size: 16px;}
+.section .showroom p:nth-of-type(2) {margin: 20px 0;}
+.section .showroom p em {font-size: 20px; font-style: normal;}
+.section .showroom .img {margin: 20px 0;}
+.section .showroom {margin: 30px 0;}
+.section .showroom p img {}
+.section .showroom_container {
+    display: flex; gap: 20px;
+    justify-content: center;
+}
+.section .showroom_container .showroom_wrap {
+    background-color: #F1EDE9; border: 1px solid #CEC2AF; border-radius: 10px;
+    padding: 30px 20px;
+}
+.section .showroom_container .showroom_wrap .name {
+    font-size: 20px; font-weight: 600;
+    color: #867C6B;
+}
+.section .showroom_container .showroom_wrap .map {
+    display: inline-block; text-align: center;
+    background-color: #CEC2AF; color: #fff;
+    font-weight: 700; font-size: 20px;
+    width: 304px; line-height: 50px;
+    margin: 20px 0;
+}
+.section .showroom_container .showroom_wrap .address_tel {
+    display: flex; gap: 20px;
+}
+.section .showroom_container .showroom_wrap .address_tel .name {
+    margin-bottom: 10px;
+}
+.section .showroom_container .showroom_wrap .address_tel p {
+    font-size: 16px; line-height: 150%;
+    color: #867C6B;
+}
