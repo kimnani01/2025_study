@@ -1,0 +1,8 @@
+@keyframes loop_right {
+    0% {background-position-x: 0;}
+    100% {background-position-x: 1968px;}
+}
+@keyframes loop_left {
+    0% {background-position-x: 1968px;}
+    100% {background-position-x: 0;}
+}

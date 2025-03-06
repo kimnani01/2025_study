@@ -1,4 +1,6 @@
-body {width: 1280px; margin: 0 auto;}
+body {width: 1280px; margin: 0 auto; overflow-x: hidden;}
+
+/* 회사소개 */
 .company_info {
     position: relative;
     display: flex; gap: 30px;
@@ -50,7 +52,7 @@ body {width: 1280px; margin: 0 auto;}
     font-style: normal;
 }
 .company_info .figures_container .figures .asset {
-    width: 275px;
+    width: 280px;
 }
 .company_info .figures_container .figures .delivery {
     padding: 0 50px; margin: 0 50px;
@@ -61,3 +63,98 @@ body {width: 1280px; margin: 0 auto;}
 .company_info .figures_container .figures .client {
     width: 174px;
 }
+
+/* 여백 */
+.blank {padding: 150px 0;}
+
+/* 카테고리 */
+.category {}
+.category h2 {
+    font-size: 30px; font-weight: 600;
+    text-align: center; margin-bottom: 30px;
+}
+.category ul {
+    display: grid; grid-gap: 20px 30px ;
+    grid-template-areas:
+        'office computer electronic electronic'
+        'air air event erection';
+}
+.category ul #office {grid-area: office;}
+.category ul #computer {grid-area: computer;}
+.category ul #electronic {grid-area: electronic;}
+.category ul #air_conditioner {grid-area: air;}
+.category ul #event {grid-area: event;}
+.category ul #erection {grid-area: erection;}
+.category ul li {
+    border: 1px solid #000;
+    border-radius: 10px; 
+}
+.category ul li a {
+    display: flex; flex-flow: column;
+    justify-content: center; align-items: center;
+    gap: 15px; height: 198px;
+}
+.category ul li a img {
+    width: 138px; height: 138px;
+    background-color: #d9d9d9;
+}
+.category ul li a span {
+    text-align: center;
+    font-size: 16px;
+}
+
+/* 문의 */
+.contact {}
+.contact h2 {
+    font-size: 30px; font-weight: 600;
+    text-align: center; margin-bottom: 30px;
+}
+.contact ul {
+    display: flex; gap: 30px;
+}
+.contact ul li {
+    border: 1px solid #000; border-radius: 10px;
+    width: 407px;
+}
+.contact ul li a {
+    display: block;
+    margin: 70px 35px;
+}
+.contact ul li a .icon {
+    text-align: right;
+}
+.contact ul li a .icon img {
+    width: 48px; height: 48px;
+    display: inline-block;
+    background-color: #d9d9d9;
+}
+.contact ul li a h3 {
+    margin: 40px 0 15px;
+    font-size: 30px; font-weight: 600;
+}
+.contact ul li a p {
+    font-size: 16px;
+}
+
+/* 레퍼런스 */
+.reference {}
+.reference h2 {
+    font-size: 30px; font-weight: 600;
+    text-align: center; margin-bottom: 30px;
+}
+.reference .container {
+    width: 100vw; /* 화면 전체 가로폭 */
+    margin-left: calc(-50vw + 50%); /* 부모 가로폭의 영향을 없앰 */
+}
+.reference .container p {
+    background: url(../images/reference.png) repeat;
+    height: 77px;
+}
+.reference .container .loop_right {
+    animation: loop_right 20s linear infinite;
+}
+.reference .container .loop_left {
+    margin: 30px 0;
+    animation: loop_left 20s linear infinite;
+}
+.reference .container p img {}
