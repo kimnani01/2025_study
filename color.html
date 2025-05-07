@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>자식의 컬러 가져오기</title>
+</head>
+<body>
+    <div id="s202505078d1d2bbbb8bef">
+        <div class="title">
+            <span>
+                <em>글자</em>
+            </span>
+        </div>
+    </div>
+    <style>
+        #s202505078d1d2bbbb8bef .title > span:first-of-type {
+            border: 1px solid transparent; /*색상 초기값 설정 */
+        }
+        #s202505078d1d2bbbb8bef .title > span:first-of-type em {color:pink;}
+    </style>
+    <script>
+        document.querySelectorAll('#s202505078d1d2bbbb8bef .title > span:first-of-type > em').forEach(em => {
+        const span = em.parentElement;
+        const emColor = getComputedStyle(em).color;
+        span.style.borderColor = emColor;
+        });
+    </script>
+</body>
+</html>
